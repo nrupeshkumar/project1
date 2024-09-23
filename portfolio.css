@@ -1,0 +1,692 @@
+/*basic start styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+text-decoration: none;
+text-transform: capitalize;
+scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: ;
+    overflow-y: ;
+    
+}
+header{
+    width: 100%;
+    height: 80px;
+z-index: 100;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+     min-height: 700px; 
+    /* max-height: 700px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+    background-color: rgb(238, 238, 237);
+    font-family: Righteous-Regular;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+}
+@font-face {
+    font-family: Cinzel-VariableFont_wght;
+    src: url('C:\Users/rupes/OneDrive/Music/Alegreya_Sans_SC,Archivo_Narrow,Cinzel,Dancing_Script,Edu_AU_VIC_WA_NT_Hand,etc/Cinzel/Cinzel-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: Righteous-Regular ;
+    src: url('C:\Users/rupes/OneDrive/Music/Alegreya_Sans_SC,Archivo_Narrow,Cinzel,Dancing_Script,Edu_AU_VIC_WA_NT_Hand,etc/Righteous/Righteous-Regular.ttf');
+}
+nav a{
+width: 130px;
+height: 20px;
+padding:10px;
+/* background-color: rgb(206, 214, 214); */
+border-radius: 10px;
+text-align: center;
+margin-left: 20px;
+transition: 0.3s;
+position: relative;
+text-align: center;
+color: #184771;
+}
+.cancel-img{
+    display: none;
+}
+nav a.active::after{
+    content: "";
+    width: 5px;
+    background-color: black;
+    height: 5px;
+    border-radius: 50%;
+    bottom:  0;
+    transition: 1s;
+    position: absolute;
+    left: 0;
+    transform: scale(0.7);
+    transform:translateX(30px) ;
+    text-align: center;
+    opacity: 0.7;
+}
+ nav a.active2{
+    background-color: rgb(250, 243, 235);
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+} 
+.logo .name{
+    background-color: transparent;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+nav a:hover{
+    background-color: rgb(223, 223, 212);
+}
+.menu-icon{
+    width: 20px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(218, 219, 220);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.spans{
+width: 25px;
+height: 5px;
+background-color: rgb(127, 132, 136);
+border-radius: 50%;
+margin-top: 2px;
+}
+
+/* page1 */
+#home .h1{
+    font-family: Righteous-Regular ;
+    color: rgb(34, 34, 99);
+    font-family: Cinzel-VariableFont_wght;
+}
+.container{
+    background-color: rgb(249, 245, 241);
+    width: 100%;
+    height: 100%;
+    /* display: ;
+    align-items: center;
+    justify-content: center;
+     */
+     border-radius: 50%;
+}
+.h-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+.h-container .h1,.para1,.para2{
+    line-height: 40px;
+    word-spacing: 3px;
+letter-spacing: 2px;
+font-family: Cinzel-VariableFont_wght;
+font-weight: 500;
+} 
+.h-span{
+    color: rgb(154, 154, 143);
+    transition: 0.4s;
+}
+.h-span:hover{
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 18px;
+}
+.h-img{
+    width: 400px;
+    height: 350px;
+    background-image: url("C:\Users/rupes/OneDrive/Music/New folder (2)/profilepage.png");
+    background-repeat: no-repeat;
+    background-position: calc() ;
+    background-size: contain;
+    
+}
+/* page1 end */
+/* page2 */
+#about{
+    font-family: Cinzel-VariableFont_wght;
+}
+.ab-container{
+    display: flex;
+    align-items: center;
+    justify-content:;
+    background-color:;
+    border-radius: 10px;
+    font-family: Cinzel-VariableFont_wght;
+}
+.profile-summary{
+    background-color: ;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    color: rgb(10, 10, 77);
+    padding: 10px 10px;
+    width: 50%;
+    
+}
+.profile-summary p{
+    color: rgb(50, 50, 60)
+}
+.education{
+    background-color:;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    color: rgb(10, 10, 77);
+    padding: 10px 10px;
+    width: 50%;
+}
+.profile-summary h1,p{
+    line-height: 25px;
+    margin-top: 20px;
+}
+.degreename h1,p,span{
+    
+}
+/* second page end */
+/* third page */
+ .sk-container{
+    border-radius: 6px;
+    background-color: rgba(250, 249, 234, 0.944);
+} 
+ .frontend{
+    width: 50%;
+    display: flex;
+    padding: 10px 40px;
+    justify-content: space-around;
+    color: rgb(10, 10, 77);
+}
+
+.frontend li,h1{
+    margin-top: 20px;
+}
+.circle{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    margin: 20px;
+}
+.circle span{
+    font-size: 20px;
+}
+.innercircle1,.innercircle2,.innercircle3,.innercircle4,.innercircle5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient( rgb(216, 216, 219)0deg,#e9e4e4 60deg);
+    border-radius: 50%;
+}
+.skill-circle2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* third page end */
+/* page 4 */
+.contactpage{
+    font-family: Cinzel-VariableFont_wght;
+    position:;
+}
+.contactsection{
+    background-color: ;
+    width: 100%;
+    height: 100%;
+    z-index: ;
+}
+.contact-part1{
+    width: 300px;
+    height: 200px;
+
+    border-radius: 4px;
+    box-shadow: 0px 5px 15px rgba(0,0,0, 0.15);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+margin: 40px 30px;
+    background-color: var(--background-color);
+    font-family: Cinzel-VariableFont_wght;
+    width: 50%;
+    }
+    .icons{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactbox .icons1,.icons2{
+        margin-top: 20px;
+    }
+.contactsection .contact-title{
+    text-align: center;
+   margin-bottom: 3rem;
+    margin-top: 3rem;
+
+}   
+.contact-title h1{
+    margin-bottom: 10px;
+} 
+ .contact-info{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .contact-area{
+    width: 50%;
+    justify-content:center;
+    align-items: center;
+    display: flex;
+ }
+ .contact-part2{
+    box-shadow: 0px 5px 15px rgba(0,0,0, 0.15);
+    width: 360px;
+    height: 410px;
+    background-color:transparent;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items:center;
+    font-family: PlaywriteUSModern-VariableFont_wght;
+    font-family: Cinzel-VariableFont_wght;
+    justify-content: center;
+    /* animation: rotate 2s linear infinite; */
+} 
+.innerpart1{
+    width: 50%;
+    height: 140%;
+    background-color:#333;
+    padding: 10px 20px;
+    animation: rotate 2s linear infinite; 
+    background: conic-gradient( rgb(199, 199, 255)0deg,#f2bdba 180deg);
+}
+.innerpart2
+{
+    width: 350px;
+    height: 420px;
+    background-color: #fcfcf5;
+    position: absolute;
+ border-radius: 4px;   
+}
+
+.inputbox{
+    margin: 20px 10px;
+ }
+.inputbox h2{
+    font-family: JosefinSlab-VariableFont_wght;
+    font-size: 30px;
+    text-align: center;
+    font-family: PlaywriteUSModern-VariableFont_wght;
+    font-family: Cinzel-VariableFont_wght;
+}
+.inputbox .field{
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+
+.field input,
+.field textarea{
+    width: 100%; 
+    padding: 10px 0px;
+    font-size: 18px;
+    font-family: PlaywriteUSModern-VariableFont_wght;
+    font-family: Cinzel-VariableFont_wght;
+    margin: 10px 0px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    resize: none;
+    outline: none;
+}
+.field span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0px;
+    font-size: 16px;
+    font-family: PlaywriteUSModern-VariableFont_wght;
+    font-family: Cinzel-VariableFont_wght;
+    margin: 10px 0px;
+    transition: 0.6s;
+    color: rgb(37, 34, 34);
+}
+.field input:focus~span,
+.field textarea:focus~span,
+.field input:valid~span,
+.field textarea:valid~span{
+    color: rgb(96, 182, 231);
+    font-size: 14px;
+    transform: translateY(-20px);
+    font-weight: 600;
+    border-bottom: #5934c7;
+}
+
+.field input:focus,
+.field textarea:focus{
+    
+border-bottom: 2px solid  rgb(96, 182, 231);
+transition: 0.4s;
+}
+.inputbox .btnbox1{
+  width: 140px;
+  height: 40px;
+  background-color: rgb(146, 121, 88);
+  border-radius: 4px; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    overflow: hidden;
+    justify-content: center;
+    background-color: transparent;
+}
+.inputbox .btnbox2{
+    width: 140px;
+    height: 120%;
+    background-color: rgb(73, 76, 121);
+    animation: translate 2s linear infinite;
+    display: none;
+}
+.btnbox1 button{
+   position: absolute;
+   bottom: 0;
+   margin: 2px;
+    width: 115px;
+    height: 35px;
+    background-color: rgb(156, 199, 236);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: rgb(6, 8, 10);
+    font-size: 20px;
+    /* box-shadow: 0px 5px 10px rgba(123, 187, 230, 0.658); */
+    transition: 0.6s ease-in;
+}
+.btnbox1 button:hover{
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.55);
+}
+.contactpage{
+    height: 90vh;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+/* page 4 end */
+
+@media only screen and (max-width:840px){
+.menu-icon{
+    display: flex;
+     position: fixed;
+    top:   0;
+    right:  0;
+    margin: 50px;
+    z-index: 50;
+}
+body{
+    overflow-y: visible;
+    margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+}
+nav{
+    position: relative;
+    top:  ;
+    width: 100%;
+}
+ .nav-list{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    background-color: rgb(219, 221, 222);
+    width: 100%;
+    height: 80vh;
+align-items: center;
+justify-content: center;
+font-size: px;
+display: none;
+transition: 0.5s;
+z-index: 50;
+} 
+
+nav a:hover{
+    background-color: transparent;
+}
+nav a{
+    margin-top: 30px;
+    font-size: 21px;
+    text-align: center;
+    width: 220px;
+    height: 50px;
+}
+nav a.active2{
+    font-size: 25px;
+}
+nav a.active{
+    font-size: 25px;
+background-color: rgb(245, 234, 220);
+}
+.cancel-img{
+    position: absolute;
+    bottom:  0;
+    right: 0;
+    width: 100%;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active3{
+    display: flex;
+    
+}
+
+.cancel-img img{
+    background-color: rgb(249, 250, 250);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 5px;
+}
+}
+@media only screen and (max-width:850px){
+.h-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+padding: 15px;
+}
+.container{
+    border-radius: 6px;
+    background-color: transparent;
+}
+.education{
+    background-color: transparent;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}
+@media only screen and (min-width:850px) and (max-width:1024px) {
+    .container{
+        border-radius: 6px;
+    }
+
+
+}
+@media only screen and (min-width:350px) and (max-width:600px){
+    .profile-summary{
+        background-color: ;
+        word-spacing: 2px;
+        letter-spacing: 2px;
+        color: rgb(10, 10, 77);
+        width: 100%;
+        
+        margin-bottom: 20px;
+    }
+    .profile-summary p{
+        color: rgb(50, 50, 60)
+    }
+    .education{
+        background-color:;
+        word-spacing: 2px;
+        letter-spacing: 2px;
+        color: rgb(10, 10, 77);
+        
+        width: 100%;
+        /* background-color: rgb(217, 233, 233); */
+        
+    }
+
+    .skills1{
+        width: 100%;
+    }
+    .frontend{
+        width: 100%;
+    }
+    .skill-circle1{
+        width: 100%;
+        /* background-color: #dadad4;  */
+    }
+    .contact-part1{
+        width: 100%;
+    }
+    .contact-area{
+        width: 100%;
+    }
+    .contact-part2{
+width: 100%;
+    }
+    .innerpart2{
+width: 100%;
+    }
+    
+@media only screen and (max-width:400px){
+.container{
+height: 100%;
+}
+.h-container{
+    width: 100%;
+}
+.ab-container{
+    height: 90% ;
+    background-color:;
+}
+.circle{
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.skill-circle1{
+    background-color: transparent;
+}
+.skill-circle2{
+
+    display: flex;
+    flex-direction: ;
+    flex-wrap: wrap;
+    position: ;
+    overflow: ;
+}
+.circle span{
+    font-size: 20px;
+}
+.contact-title{
+    padding: 10px;
+}
+.innercircle1,.innercircle2,.innercircle3,.innercircle4,.innercircle5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column ;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient( rgb(216, 216, 219)0deg,#e9e4e4 60deg);
+    border-radius: 50%;
+}
+#about{
+height: 100vh;
+}
+.ab-title{
+max-height: fit-content;
+}
+}
+}
+@media only screen and (min-width:600px) and (max-width:850px){
+.skill-circle1{
+    width: 100%;
+}
+.skills1{
+    width: 100%;
+}
+.frontend{
+    width: 100%;
+}
+
+.profile-summary{
+    background-color: ;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    color: rgb(10, 10, 77);
+    width: 80%;
+    
+    margin-bottom: 20px;
+}
+.profile-summary p{
+    color: rgb(50, 50, 60)
+}
+.education{
+    background-color:;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    color: rgb(10, 10, 77);
+    
+    width: 80%;
+     /* background-color: rgb(217, 233, 233);  */
+    
+}
+
+}
+@media only screen and (min-width:700px){
+section{
+  max-height: 800px;
+}
+
+}
