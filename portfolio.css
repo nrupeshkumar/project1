@@ -155,13 +155,14 @@ font-weight: 500;
     font-weight: 600;
     font-size: 18px;
 }
+
 .h-img{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 350px;
     
 }
 .h-img img{
-    width:100%;
+    width: 100%;
 }
 
 /* page1 end */
