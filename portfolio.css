@@ -279,8 +279,10 @@ margin: 40px 30px;
         display: flex;
         flex-direction: column;
     }
-    .contactbox .icons1,.icons2{
+    .contactbox .icons1,.icons2,span{
         margin-top: 20px;
+    letter-spacing: 2px;
+        text-transform: uppercase;
     }
 .contactsection .contact-title{
     text-align: center;
